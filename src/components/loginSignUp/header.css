@@ -1,0 +1,10 @@
+.container{
+    position:flex;
+    align-items: center;
+}
+.topelements{
+position: center;
+top:0;
+left:0;
+
+}

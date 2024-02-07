@@ -1,0 +1,45 @@
+/* countries.css */
+
+.container {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+  }
+ 
+  .country-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    flex: 1;
+  }
+  #countrySelect{
+    background-color: aquamarine;
+    text-align: center;
+  }
+  .selected-country {
+    position: relative;
+    left: 100%;
+    transition: left 0.5s ease-in-out;
+  }
+  
+  .selected-country.show {
+    left: 0;
+  }
+  
+  .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 5s linear infinite;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
